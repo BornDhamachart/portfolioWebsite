@@ -8,26 +8,26 @@ import {
 const SideLink = () => {
   return (
     <div className="flex-col flex justify-evenly gap-4 text-white px-6">
-        <a
+      <a
         className="cursor-pointer text-xl flex justify-center"
         href=""
         target="_blank"
-        >
-      <LinkedinOutlined />
+      >
+        <LinkedinOutlined />
       </a>
       <a
-      className="cursor-pointer text-xl flex justify-center"
-      href=""
-      target="_blank"
+        className="cursor-pointer text-xl flex justify-center"
+        href=""
+        target="_blank"
       >
-      <GithubOutlined />
+        <GithubOutlined />
       </a>
       <a
-      className="cursor-pointer text-xl flex justify-center"
-      href=""
-      target="_blank"
+        className="cursor-pointer text-xl flex justify-center"
+        href=""
+        target="_blank"
       >
-      <MailOutlined />
+        <MailOutlined />
       </a>
       <div className="h-[100px] border border-white mx-auto"></div>
     </div>
