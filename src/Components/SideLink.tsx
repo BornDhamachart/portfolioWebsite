@@ -8,7 +8,7 @@ import {
 
 const SideLink = () => {
   const item = {
-    hidden: { opacity: 0, y:500 },
+    hidden: { opacity: 0, y: 50 },
     show: {
       opacity: 1,
       y: 0,
@@ -47,7 +47,7 @@ const SideLink = () => {
       >
         <MailOutlined />
       </a>
-      <div className="h-[100px] border border-white mx-auto"></div>
+      <div className="h-[150px] border border-white mx-auto"></div>
     </motion.div>
   );
 };

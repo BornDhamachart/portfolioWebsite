@@ -46,9 +46,9 @@ const Projects = () => {
   };
 
   const picture = {
-    hidden: { left: 0 },
+    hidden: { width: 420 },
     show: {
-      left: "100%",
+      width: 0,
       transition: {
         ease: "easeIn",
         duration: 0.5,
@@ -68,10 +68,12 @@ const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
+  const pictureControls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
       mainControls.start("show");
+      pictureControls.start("show");
       console.log("Inview Projects");
     }
   }, [isInView]);
@@ -101,13 +103,13 @@ const Projects = () => {
           ></motion.div>
         </motion.div>
 
-        <motion.div
-          className="flex justify-between"
-          initial="hidden"
-          animate={mainControls}
-          variants={item}
-        >
-          <div className="w-1/2">
+        <div className="flex justify-between">
+          <motion.div
+            className="w-1/2"
+            initial="hidden"
+            animate={mainControls}
+            variants={item}
+          >
             <div className="text-white font-bold text-xl">H6 Homesix</div>
             <div className="text-white  bg-blue-900 w-3/4 mt-4">
               <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
@@ -120,15 +122,21 @@ const Projects = () => {
                 <div className=" text-gray-500">{r}</div>
               ))}
             </div>
-          </div>
-          <div className="w-1/2">
+          </motion.div>
+          <div className="w-1/2 relative">
             <img
               alt="h6homesix"
               src="./h6homesix.png"
               className="w-[420px] h-[250px]"
             />
+            <motion.div
+              className="absolute top-0 left-0 w-[420px] h-[250px] bg-white opacity-90"
+              initial="hidden"
+              animate={mainControls}
+              variants={picture}
+            ></motion.div>
           </div>
-        </motion.div>
+        </div>
 
         <motion.div
           className="flex justify-between mt-16"
