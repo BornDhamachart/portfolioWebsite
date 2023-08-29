@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <div className="flex justify-end">
-      <div className="flex justify-evenly items-center gap-8 text-white p-8">
+    <div className="flex justify-end bg-black opacity-70 w-full">
+      <div className="flex justify-evenly items-center gap-8 text-white px-8 py-4">
         <div>About me</div>
         <div>Projects</div>
         <div>Exp</div>
