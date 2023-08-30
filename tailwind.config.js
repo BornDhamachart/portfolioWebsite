@@ -6,17 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'custom-blue': '#0B3C5D',
-        'sky-blue': '#328CC1',
-        'gold': '#D9B310',
-        'ivory': '#1D2731',
-      },
-      textColor: {
-        'custom-blue': '#0B3C5D',
-        'sky-blue': '#328CC1',
-        'gold': '#D9B310',
-        'ivory': '#1D2731',
+      colors: {
+        'custom-black': '#0B0C10',
+        'custom-gray1': '#1F2833',
+        'custom-gray2': '#C5C6C7',
+        'custom-blue1': '#66FCF1',
+        'custom-blue2': '#45A29E'
       },
   },
   },

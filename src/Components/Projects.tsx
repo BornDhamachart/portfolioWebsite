@@ -82,87 +82,65 @@ const Projects = () => {
     <>
       <div ref={ref}>
         <motion.div
-          className="flex items-center mb-10 mt-16"
           initial="hidden"
           animate={mainControls}
           variants={container}
         >
           <motion.div
-            className="text-white text-4xl font-bold"
+            className="flex items-center mb-10 mt-16"
             initial="hidden"
             animate={mainControls}
-            variants={itemHead}
+            variants={container}
           >
-            Projects
-          </motion.div>
-          <motion.div
-            className="border border-white w-full mx-6"
-            initial="hidden"
-            animate={mainControls}
-            variants={rightToLeft}
-          ></motion.div>
-        </motion.div>
-
-        <div className="flex justify-between">
-          <motion.div
-            className="w-1/2"
-            initial="hidden"
-            animate={mainControls}
-            variants={item}
-          >
-            <div className="text-white font-bold text-xl">H6 Homesix</div>
-            <div className="text-white  bg-blue-900 w-3/4 mt-4">
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-            </div>
-            <div className="flex gap-4 mt-4">
-              {items.map((r: string) => (
-                <div className=" text-gray-500">{r}</div>
-              ))}
-            </div>
-          </motion.div>
-          <div className="w-1/2 relative">
-            <img
-              alt="h6homesix"
-              src="./h6homesix.png"
-              className="w-[420px] h-[250px]"
-            />
             <motion.div
-              className="absolute top-0 left-0 w-[420px] h-[250px] bg-white opacity-90"
+              className="text-white text-4xl font-bold"
               initial="hidden"
               animate={mainControls}
-              variants={picture}
+              variants={itemHead}
+            >
+              Projects
+            </motion.div>
+            <motion.div
+              className="border border-white w-full mx-6"
+              initial="hidden"
+              animate={mainControls}
+              variants={rightToLeft}
             ></motion.div>
-          </div>
-        </div>
+          </motion.div>
 
-        <motion.div
-          className="flex justify-between mt-16"
-          initial="hidden"
-          animate={mainControls}
-          variants={item}
-        >
-          <div className="w-1/2">
-            <img
-              alt="h6homesix"
-              src="./h6homesix.png"
-              className="w-[420px] h-[250px]"
-            />
-          </div>
-          <div className="w-1/2">
-            <div className="text-white font-bold text-xl">H6 Homesix</div>
-            <div className="text-white  bg-blue-900 w-3/4 mt-4">
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-              <p>A website for achitexture house dfgdfgdfgdfgdfgg</p>
-            </div>
-            <div className="flex gap-4 mt-4">
-              {items.map((r: string) => (
-                <div className=" text-gray-500">{r}</div>
-              ))}
+          <div className="flex justify-evenly">
+            <motion.div
+              className="w-1/2"
+              initial="hidden"
+              animate={mainControls}
+              variants={item}
+            >
+              <div className="text-white font-bold text-xl">H6 Homesix</div>
+              <div className="text-white bg-black w-3/4 mt-4">
+                <p className="break-all">
+                  Simple architectural firm website specializing in the design
+                  and renovation of houses, with a strong focus on minimal
+                  Japanese and Scandinavian aesthetics
+                </p>
+              </div>
+              <div className="flex gap-4 mt-4">
+                {items.map((r: string) => (
+                  <div className=" text-gray-500">{r}</div>
+                ))}
+              </div>
+            </motion.div>
+            <div className="w-1/2 relative">
+              <img
+                alt="h6homesix"
+                src="./h6homesix.png"
+                className="w-[420px] h-[250px]"
+              />
+              <motion.div
+                className="absolute top-0 left-0 w-[420px] h-[250px] bg-white opacity-90"
+                initial="hidden"
+                animate={mainControls}
+                variants={picture}
+              ></motion.div>
             </div>
           </div>
         </motion.div>

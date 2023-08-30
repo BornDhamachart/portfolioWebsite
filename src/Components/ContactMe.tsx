@@ -61,9 +61,9 @@ const ContactMe = () => {
             animate={mainControls}
             variants={item}
           >
-            <div>dfgdsfghdshgshghdhdfghfgdhhdfghhfgh</div>
-            <div>dfgdsfghdshgshghdhdfghfgdhhdfghhfgh</div>
-            <div>dfgdsfghdshgshghdhdfghfgdhhdfghhfgh</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
           </motion.div>
           <motion.div
             className="w-full flex justify-center mt-6"

@@ -21,13 +21,13 @@ const SideLink = () => {
 
   return (
     <motion.div
-      className="flex-col flex justify-evenly gap-4 text-white px-6"
+      className="flex-col flex justify-evenly gap-4 text-custom-blue1 hover:text-white px-6"
       initial="hidden"
       animate="show"
       variants={item}
     >
       <a
-        className="cursor-pointer text-xl flex justify-center"
+        className="cursor-pointer text-xl flex justify-center rounded-full p-2 hover:bg-gray-400 hover:bg-opacity-50"
         href=""
         target="_blank"
       >

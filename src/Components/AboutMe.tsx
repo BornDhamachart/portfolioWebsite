@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaRegHandSpock } from 'react-icons/fa';
+
 const AboutMe = () => {
   const item = {
     hidden: { opacity: 0 },
@@ -37,20 +39,28 @@ const AboutMe = () => {
     <>
       <motion.div initial="hidden" animate="show" variants={container}>
         <motion.div
-          className="text-blue-200"
+          className=""
           initial="hidden"
           animate="show"
           variants={item}
         >
           {hello.split("").map((letter: string, idx: number) => (
             <motion.span
-              className="text-2xl"
+              className="text-2xl text-custom-blue2"
               variants={letterAnimation}
               key={idx}
             >
               {letter}
             </motion.span>
           ))}
+          <motion.span
+          className="hover:rotate-3 text-yellow-600 hover:scale-105"
+          initial="hidden"
+          animate="show"
+          variants={item}
+          >
+            <FaRegHandSpock />
+          </motion.span>
         </motion.div>
         <motion.div className="font-bold text-6xl text-white mt-2">
           Test Test{" "}

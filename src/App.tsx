@@ -5,16 +5,18 @@ import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import Experience from "./Components/Experience";
 import SideLink from "./Components/SideLink";
-import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { useRef } from "react";
 
 function App() {
-  const contactMeRef = useRef<HTMLDivElement | null>(null);
+  const aboutMeRef = useRef<HTMLDivElement | null>(null);
+  const projectsRef = useRef<HTMLDivElement | null>(null);
+  const expRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
 
-  const scrollToDiv = () => {
-    if (contactMeRef.current) {
-      contactMeRef.current.scrollIntoView({
+  const scrollTo = (ref: any) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({
         behavior: "smooth", // Add smooth scrolling effect
         block: "start", // Scroll to the top of the element
       });
@@ -23,24 +25,58 @@ function App() {
 
   return (
     <>
-      <button onClick={scrollToDiv}>Scroll to Div</button>
-      <div className="bg-ivory w-full h-full">
+      <div className="bg-custom-gray1 w-full h-full">
         <div>
           <div className="sticky top-0">
-            <Navbar />
+            <div className="flex justify-end bg-custom-black opacity-70 w-full drop-shadow-lg">
+              <div className="flex justify-evenly items-center gap-8 px-8 py-4 text-custom-blue1 hover:text-white">
+                <div
+                  className="cursor-pointer"
+                  onClick={() => scrollTo(aboutMeRef)}
+                >
+                  About me
+                </div>
+                <div
+                  className="cursor-pointer"
+                  onClick={() => scrollTo(projectsRef)}
+                >
+                  Projects
+                </div>
+                <div
+                  className="cursor-pointer"
+                  onClick={() => scrollTo(expRef)}
+                >
+                  Exp
+                </div>
+                <div
+                  className="cursor-pointer"
+                  onClick={() => scrollTo(contactRef)}
+                >
+                  Contact
+                </div>
+                <a
+                  className="border border-white hover:border-custom-blue1 px-4 py-1 rounded-lg cursor-pointer hover:text-custom-blue1 text-white"
+                  href=""
+                  target="_blank"
+                >
+                  Test
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="pl-28">
+          <div className="pl-28 mt-16" ref={aboutMeRef}>
             <AboutMe />
           </div>
         </div>
         <div className="pl-28">
           <TechStack />
-          <div className="h-64">test</div>
-          <Projects />
-          <div className="h-64">test</div>
-          <Experience />
-          <div className="h-64">test</div>
-          <div ref={contactMeRef}>
+          <div ref={projectsRef}>
+            <Projects />
+          </div>
+          <div ref={expRef}>
+            <Experience />
+          </div>
+          <div ref={contactRef}>
             <ContactMe />
           </div>
 
