@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { FaRegHandSpock } from 'react-icons/fa';
+import { FaRegHandSpock } from "react-icons/fa";
 
-const AboutMe = () => {
+const AboutMe: React.FC = () => {
   const item = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: 50 },
     show: {
       opacity: 1,
+      y: 0,
       transition: {
         ease: "easeInOut",
         duration: 1.6,
@@ -23,30 +24,26 @@ const AboutMe = () => {
   };
 
   const letterAnimation = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -20 },
     show: {
       opacity: 1,
+      y: 0,
       transition: {
         ease: "easeInOut",
-        duration: 1,
+        duration: 0.2,
       },
     },
   };
 
-  const hello = "Hi Test test";
+  const hello = "Hey!";
 
   return (
     <>
       <motion.div initial="hidden" animate="show" variants={container}>
-        <motion.div
-          className=""
-          initial="hidden"
-          animate="show"
-          variants={item}
-        >
+        <motion.div className="flex items-center" variants={container}>
           {hello.split("").map((letter: string, idx: number) => (
             <motion.span
-              className="text-2xl text-custom-blue2"
+              className="md:text-2xl text-xl text-custom-blue1"
               variants={letterAnimation}
               key={idx}
             >
@@ -54,27 +51,39 @@ const AboutMe = () => {
             </motion.span>
           ))}
           <motion.span
-          className="hover:rotate-3 text-yellow-600 hover:scale-105"
-          initial="hidden"
-          animate="show"
-          variants={item}
+            className=" text-yellow-400 text-xl ml-2"
+            variants={letterAnimation}
           >
             <FaRegHandSpock />
           </motion.span>
         </motion.div>
-        <motion.div className="font-bold text-6xl text-white mt-2">
-          Test Test{" "}
+
+        <motion.div className="font-bold" variants={item}>
+          <span className="md:text-4xl text-2xl text-custom-blue1">I am</span>
+          <span className="md:text-6xl text-4xl text-custom-gray2">
+            {" "}
+            Dhamachart Chanprasartsuk
+          </span>
+          <span className="md:text-8xl text-6xl text-custom-blue1">.</span>
         </motion.div>
-        <motion.div>
-          <p className="text-blue-200 mt-4">
+
+        <motion.div variants={item}>
+          <div className="mt-4">
+            <span className="text-custom-gray2 text-4xl">- - </span>
+            <span className="md:text-5xl text-2xl font-bold text-custom-blue1">
+              {" "}
+              FULLSTACK DEVELOPER
+            </span>
+          </div>
+          <p className="text-custom-gray2 mt-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <p className="text-blue-200">
+          <p className="text-custom-gray2 mt-1">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <p className="text-blue-200">
+          <p className="text-custom-gray2 mt-1">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>

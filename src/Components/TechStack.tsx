@@ -7,41 +7,40 @@ const TechStack = () => {
     "HTML",
     "CSS",
     "React",
+    "NextJS",
     "Tailwind CSS",
     "Antd",
+    "NodeJS",
+    "Express",
+    "Postgres",
+    "Github",
+    "GitLab",
   ];
-  const backEndItems = ["NodeJS", "Express", "Postgres"];
 
   const item = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, x: -150 },
     show: {
       opacity: 1,
+      x: 0,
       transition: {
         ease: "easeInOut",
-        duration: 1.6,
+        duration: 0.8,
       },
     },
   };
 
   return (
     <>
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={item}
-      >
-        <div className="my-2">Front End :</div>
-        <div className="flex gap-6">
-          {frontEndItems.map((r: string) => (
-            <div className="rounded-xl py-1 px-2 border border-gray-500 text-gray-500">
-              {r}
-            </div>
-          ))}
+      <motion.div initial="hidden" animate="show" variants={item}>
+        <div className="my-2">
+          <span className="md:text-4xl text-2xl text-custom-gray2 font-bold">
+            Tech stack that I've used
+          </span>
+          <span className="text-8xl text-custom-blue1">.</span>
         </div>
-        <div className="my-2">Back End :</div>
-        <div className="flex gap-6">
-          {backEndItems.map((r: String) => (
-            <div className="rounded-xl py-1 px-2 border border-gray-500 text-gray-500">
+        <div className="flex md:gap-6 gap-2 mt-4 flex-wrap md:w-3/4 w-full">
+          {frontEndItems.map((r: string) => (
+            <div className="rounded-2xl py-1 px-2  text-custom-gray2 bg-gray-700">
               {r}
             </div>
           ))}
