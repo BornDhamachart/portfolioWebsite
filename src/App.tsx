@@ -70,28 +70,28 @@ function App() {
                 variants={container}
               >
                 <motion.div
-                  className="cursor-pointer hover:text-white"
+                  className="cursor-pointer hover:text-custom-gray2"
                   onClick={() => scrollTo(aboutMeRef)}
                   variants={item}
                 >
                   About me
                 </motion.div>
                 <motion.div
-                  className="cursor-pointer hover:text-white"
+                  className="cursor-pointer hover:text-custom-gray2"
                   onClick={() => scrollTo(projectsRef)}
                   variants={item}
                 >
                   Projects
                 </motion.div>
                 <motion.div
-                  className="cursor-pointer hover:text-white"
+                  className="cursor-pointer hover:text-custom-gray2"
                   onClick={() => scrollTo(expRef)}
                   variants={item}
                 >
                   Exp
                 </motion.div>
                 <motion.div
-                  className="cursor-pointer hover:text-white"
+                  className="cursor-pointer hover:text-custom-gray2"
                   onClick={() => scrollTo(contactRef)}
                   variants={item}
                 >
@@ -117,7 +117,7 @@ function App() {
         </div>
         <div className="md:pl-48 px-4 mt-16">
           <TechStack />
-          <div ref={projectsRef} className="md:mt-44 mt-6">
+          <div ref={projectsRef} className="md:mt-56 mt-6">
             <Projects />
           </div>
           <div ref={expRef} className="md:mt-44 mt-6">
