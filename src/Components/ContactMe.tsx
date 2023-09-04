@@ -63,8 +63,10 @@ const ContactMe: React.FC = () => {
             animate={mainControls}
             variants={item}
           >
-            <p className="md:w-1/3 w-full text-center break-words">
-              testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+            <p className="md:w-1/3 w-full text-center break-words text-lg">
+              I’m currently looking for new opportunities, my inbox is always
+              open. Whether you have a question or just want to say hi, feel
+              free to leave me a message.
             </p>
           </motion.div>
           <motion.div

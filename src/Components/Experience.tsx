@@ -12,14 +12,12 @@ const Experience: React.FC = () => {
   const exp: Exp[] = [
     {
       companyName: "SIAMRAJATHANEE",
-      position: "Fullstack Developer",
+      position: "Full Stack Developer",
       date: "May 2023 - Present",
       jobResp: [
-        "jobResp 1 jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1",
-        "jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1",
-        "jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1",
-        "jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1",
-        "jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1jobResp 1",
+        "Led the development of the TikTrack HR web application, a central platform empowering HR administrators to efficiently manage a range of functions, including organizational structures, attendance, leave, special tasks, and overtime. This comprehensive solution covered both in-house employees and external employees, including outsourced staff",
+        "Designed an intuitive and responsive user interface using technologies like ReactJS, NextJS, and Antd components, ensuring a seamless and user-friendly experience",
+        "Collaborated closely with backend developers to meticulously design and integrate RESTful APIs. This integration facilitated robust CRUD operations",
       ],
     },
     {

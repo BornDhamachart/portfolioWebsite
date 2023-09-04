@@ -75,17 +75,11 @@ const AboutMe: React.FC = () => {
               FULLSTACK DEVELOPER
             </span>
           </div>
-          <p className="text-custom-gray2 mt-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p className="text-custom-gray2 mt-1">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p className="text-custom-gray2 mt-1">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <p className="text-custom-gray2 mt-8 break-words md:w-1/2 text-lg">
+            I am a Full Stack Developer who dedicated to continuous learning and
+            growth, transitioning from a career in mechanical engineering.
+            Passionate about technology and the financial industry, driven to
+            make a meaningful impact.
           </p>
         </motion.div>
       </motion.div>

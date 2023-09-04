@@ -51,20 +51,20 @@ function App() {
       <div className="bg-custom-gray1 w-full h-full">
         <nav className="bg-custom-gray1 opacity-90 w-full drop-shadow-lg fixed top-0">
           <div className="w-full flex flex-wrap items-center justify-end p-4">
-              <button
-                type="button"
-                onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-2xl rounded-lg md:hidden hover:bg-custom-gray2 focus:outline-none focus:ring-2 focus:ring-custom-gray2 text-custom-blue1"
-              >
-                <GiHamburgerMenu />
-              </button>
+            <button
+              type="button"
+              onClick={() => setIsOpen(!isOpen)}
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-2xl rounded-lg md:hidden hover:bg-custom-gray2 focus:outline-none focus:ring-2 focus:ring-custom-gray2 text-custom-blue1"
+            >
+              <GiHamburgerMenu />
+            </button>
             <div
               className={`items-center justify-between w-full md:flex md:w-auto ${
                 !isOpen && "hidden"
               }`}
             >
               <motion.div
-                className="flex flex-col md:flex-row justify-evenly items-center gap-8 px-8 py-4 text-custom-blue1"
+                className="flex flex-col md:flex-row justify-evenly items-center gap-8 px-8 text-custom-blue1"
                 initial="hidden"
                 animate="show"
                 variants={container}
@@ -109,60 +109,13 @@ function App() {
           </div>
         </nav>
 
-        {/* <div className="sticky top-0">
-            <div className="flex justify-end bg-custom-gray1 opacity-70 w-full drop-shadow-lg">
-              <motion.div
-                className="flex justify-evenly items-center gap-8 px-8 py-4 text-custom-blue1"
-                initial="hidden"
-                animate="show"
-                variants={container}
-              >
-                <motion.div
-                  className="cursor-pointer hover:text-white"
-                  onClick={() => scrollTo(aboutMeRef)}
-                  variants={item}
-                >
-                  About me
-                </motion.div>
-                <motion.div
-                  className="cursor-pointer hover:text-white"
-                  onClick={() => scrollTo(projectsRef)}
-                  variants={item}
-                >
-                  Projects
-                </motion.div>
-                <motion.div
-                  className="cursor-pointer hover:text-white"
-                  onClick={() => scrollTo(expRef)}
-                  variants={item}
-                >
-                  Exp
-                </motion.div>
-                <motion.div
-                  className="cursor-pointer hover:text-white"
-                  onClick={() => scrollTo(contactRef)}
-                  variants={item}
-                >
-                  Contact
-                </motion.div>
-                <a
-                  className="border border-white hover:border-custom-blue1 px-4 py-1 rounded-md cursor-pointer hover:text-custom-blue1 text-white"
-                  href=""
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </motion.div>
-            </div>
-          </div> */}
-
         <div className="md:pl-48 px-4 pt-36" ref={aboutMeRef}>
           <AboutMe />
         </div>
         <div className="md:left-0 px-4 mt-2 md:bottom-0 md:fixed">
           <SideLink />
         </div>
-        <div className="md:pl-48 px-4 mt-6">
+        <div className="md:pl-48 px-4 mt-16">
           <TechStack />
           <div ref={projectsRef} className="md:mt-44 mt-6">
             <Projects />
