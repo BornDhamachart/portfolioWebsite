@@ -2,7 +2,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { MdLogout } from "react-icons/md";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const items = [
     "TypeScript",
     "React",
@@ -75,7 +75,7 @@ const Projects = () => {
     if (isInView) {
       mainControls.start("show");
       pictureControls.start("show");
-      console.log("Inview Projects");
+      // console.log("Inview Projects");
     }
   }, [isInView]);
 
@@ -133,7 +133,7 @@ const Projects = () => {
               </motion.div>
               <div className="md:w-1/2 w-full relative md:order-2">
                 <img
-                  alt="h6homesix"
+                  alt="h6homesix website"
                   src="./h6homesix.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />

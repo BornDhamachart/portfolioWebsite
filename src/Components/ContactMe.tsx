@@ -1,7 +1,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const ContactMe = () => {
+const ContactMe: React.FC = () => {
   const item = {
     hidden: { opacity: 0, y: 25 },
     show: {
@@ -30,7 +30,7 @@ const ContactMe = () => {
   useEffect(() => {
     if (isInView) {
       mainControls.start("show");
-      console.log("Inview Contact Me");
+      // console.log("Inview Contact Me");
     }
   }, [isInView]);
 
@@ -38,7 +38,6 @@ const ContactMe = () => {
     <>
       <div ref={ref}>
         <motion.div
-          className=""
           initial="hidden"
           animate={mainControls}
           variants={container}

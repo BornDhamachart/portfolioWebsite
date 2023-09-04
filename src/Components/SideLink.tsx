@@ -6,7 +6,7 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 
-const SideLink = () => {
+const SideLink: React.FC = () => {
   const item = {
     hidden: { opacity: 0, y: 50 },
     show: {

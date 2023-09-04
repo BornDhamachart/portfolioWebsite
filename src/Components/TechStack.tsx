@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const TechStack = () => {
+const TechStack: React.FC = () => {
   const frontEndItems = [
     "JavaScript",
     "TypeScript",

@@ -2,7 +2,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
-const Experience = () => {
+const Experience: React.FC = () => {
   interface Exp {
     companyName: string;
     position: string;
