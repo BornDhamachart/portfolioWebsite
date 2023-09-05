@@ -8,6 +8,7 @@ import SideLink from "./Components/SideLink";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
+import resume from "./assets/Resume_Dhamachart Chanprasartsuk.pdf";
 
 function App() {
   const aboutMeRef = useRef<HTMLDivElement | null>(null);
@@ -99,7 +100,7 @@ function App() {
                 </motion.div>
                 <a
                   className="border border-white hover:border-custom-blue1 px-4 py-1 rounded-md cursor-pointer hover:text-custom-blue1 text-white"
-                  href=""
+                  href={resume}
                   target="_blank"
                 >
                   Resume
