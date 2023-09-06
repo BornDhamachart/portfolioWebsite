@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
           </motion.div>
 
           <div className="flex-col flex justify-center items-center">
-            <div className="flex-col md:flex-row flex md:p-8 justify-center md:w-2/3 w-full gap-6">
+            <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
               <motion.div
                 className="md:w-1/2 w-full md:order-1"
                 variants={item}
@@ -153,7 +153,7 @@ const Projects: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex-col md:flex-row flex md:p-8 justify-center md:w-2/3 w-full gap-6 mt-6">
+            <div className="flex-col md:flex-row flex md:p-8 justify-center  w-full xl:w-2/3 gap-6 mt-6">
               <motion.div
                 className="md:w-1/2 w-full md:order-2"
                 variants={item}
