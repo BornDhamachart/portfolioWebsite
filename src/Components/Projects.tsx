@@ -3,13 +3,20 @@ import { useEffect, useRef } from "react";
 import { MdLogout } from "react-icons/md";
 
 const Projects: React.FC = () => {
-  const items = [
+  const items1 = [
     "TypeScript",
     "React",
     "Tailwind CSS",
     "Antd",
     "Framer motion",
     "Vite",
+  ];
+  const items2 = [
+    "TypeScript",
+    "NextJS",
+    "Tailwind CSS",
+    "Antd",
+    "Tanstack Query",
   ];
 
   const item = {
@@ -113,7 +120,9 @@ const Projects: React.FC = () => {
                     H6 Homesix
                   </div>
                   <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
-                    <MdLogout />
+                    <a href="https://h6homesix.vercel.app/" target="_blank">
+                      <MdLogout />
+                    </a>
                   </div>
                 </div>
                 <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
@@ -124,7 +133,7 @@ const Projects: React.FC = () => {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {items.map((r: string) => (
+                  {items1.map((r: string) => (
                     <div className="rounded-2xl py-1 px-2 text-custom-blue2 bg-gray-700 text-sm">
                       {r}
                     </div>
@@ -151,21 +160,25 @@ const Projects: React.FC = () => {
               >
                 <div className="flex items-center gap-6">
                   <div className="text-white font-bold text-xl hover:text-custom-blue1">
-                    H6 Homesix
+                    Car Rental Website
                   </div>
                   <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
-                    <MdLogout />
+                    <a href="https://car-rental-dc.vercel.app/" target="_blank">
+                      <MdLogout />
+                    </a>
                   </div>
                 </div>
                 <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
                   <p className="break-words">
-                    Simple architectural firm website specializing in the design
-                    and renovation of houses, with a strong focus on minimal
-                    Japanese and Scandinavian aesthetics
+                    Experience seamless car rental with our user-friendly
+                    website mockup. Explore a wide range of vehicles, easily
+                    book your preferred car. Discover transparent pricing,
+                    convenient search options, and a responsive design for a
+                    smooth online car rental experience
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {items.map((r: string) => (
+                  {items2.map((r: string) => (
                     <div className="rounded-2xl py-1 px-2 text-custom-blue2 bg-gray-700 text-sm">
                       {r}
                     </div>
@@ -174,8 +187,8 @@ const Projects: React.FC = () => {
               </motion.div>
               <div className="md:w-1/2 w-full relative md:order-1">
                 <img
-                  alt="h6homesix"
-                  src="./h6homesix.png"
+                  alt="carRental"
+                  src="./carRental.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />
                 <motion.div
