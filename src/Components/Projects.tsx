@@ -117,22 +117,22 @@ const Projects: React.FC = () => {
           </motion.div>
 
           <div className="flex-col flex justify-center items-center">
+            <div className="flex items-center gap-6">
+              <div className="text-white font-bold text-xl hover:text-custom-blue1">
+                H6 Homesix
+              </div>
+              <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
+                <a href="https://h6homesix.vercel.app/" target="_blank">
+                  <MdLogout />
+                </a>
+              </div>
+            </div>
             <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
               <motion.div
                 className="md:w-1/2 w-full md:order-1"
                 variants={item}
               >
-                <div className="flex items-center gap-6">
-                  <div className="text-white font-bold text-xl hover:text-custom-blue1">
-                    H6 Homesix
-                  </div>
-                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
-                    <a href="https://h6homesix.vercel.app/" target="_blank">
-                      <MdLogout />
-                    </a>
-                  </div>
-                </div>
-                <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
+                <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
                   <p className="break-words">
                     Simple architectural firm website specializing in the design
                     and renovation of houses, with a strong focus on minimal
@@ -147,7 +147,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2 md:pt-11">
+              <div className="md:w-1/2 w-full relative md:order-2 flex justify-center">
                 <img
                   alt="h6homesix website"
                   src="./h6homesix.png"
@@ -160,22 +160,22 @@ const Projects: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex-col md:flex-row flex md:p-8 justify-center  w-full xl:w-2/3 gap-6 mt-6">
+            <div className="flex items-center gap-6 mt-6">
+              <div className="text-white font-bold text-xl hover:text-custom-blue1">
+                Car Rental Website
+              </div>
+              <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
+                <a href="https://car-rental-dc.vercel.app/" target="_blank">
+                  <MdLogout />
+                </a>
+              </div>
+            </div>
+            <div className="flex-col md:flex-row flex md:p-8 justify-center  w-full xl:w-2/3 gap-6">
               <motion.div
                 className="md:w-1/2 w-full md:order-2"
                 variants={item}
               >
-                <div className="flex items-center gap-6">
-                  <div className="text-white font-bold text-xl hover:text-custom-blue1">
-                    Car Rental Website
-                  </div>
-                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
-                    <a href="https://car-rental-dc.vercel.app/" target="_blank">
-                      <MdLogout />
-                    </a>
-                  </div>
-                </div>
-                <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
+                <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
                   <p className="break-words">
                     Experience seamless car rental with our user-friendly
                     website mockup. Explore a wide range of vehicles, easily
@@ -192,7 +192,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-1 md:pt-11">
+              <div className="md:w-1/2 w-full relative md:order-1 flex justify-center">
                 <img
                   alt="carRental"
                   src="./carRental.png"
@@ -205,18 +205,17 @@ const Projects: React.FC = () => {
               </div>
             </div>
 
+            <div className="flex items-center gap-6 mt-6">
+              <div className="text-white font-bold text-xl hover:text-custom-blue1">
+                TikTrack
+              </div>
+            </div>
             <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
               <motion.div
                 className="md:w-1/2 w-full md:order-1"
                 variants={item}
               >
-                <div className="flex items-center gap-6">
-                  <div className="text-white font-bold text-xl hover:text-custom-blue1">
-                    TikTrack
-                  </div>
-                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150"></div>
-                </div>
-                <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
+                <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
                   <p className="break-words">
                     TikTrack is a comprehensive HR management solution with
                     mobile apps for employees and a web platform for
@@ -234,7 +233,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2 md:pt-11">
+              <div className="md:w-1/2 w-full relative md:order-2 flex justify-center">
                 <img
                   alt="tiktrack website"
                   src="./tikTrack.png"
