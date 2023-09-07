@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
     "NextJS",
     "Tailwind CSS",
     "Antd",
-    "Tanstack Query",
+    "React Query",
   ];
 
   const item = {
@@ -147,7 +147,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2">
+              <div className="md:w-1/2 w-full relative md:order-2 md:pt-11">
                 <img
                   alt="h6homesix website"
                   src="./h6homesix.png"
@@ -192,7 +192,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-1">
+              <div className="md:w-1/2 w-full relative md:order-1 md:pt-11">
                 <img
                   alt="carRental"
                   src="./carRental.png"
@@ -212,13 +212,9 @@ const Projects: React.FC = () => {
               >
                 <div className="flex items-center gap-6">
                   <div className="text-white font-bold text-xl hover:text-custom-blue1">
-                    H6 Homesix
+                    TikTrack
                   </div>
-                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
-                    <a href="https://h6homesix.vercel.app/" target="_blank">
-                      <MdLogout />
-                    </a>
-                  </div>
+                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150"></div>
                 </div>
                 <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
                   <p className="break-words">
@@ -238,7 +234,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2">
+              <div className="md:w-1/2 w-full relative md:order-2 md:pt-11">
                 <img
                   alt="tiktrack website"
                   src="./tikTrack.png"
