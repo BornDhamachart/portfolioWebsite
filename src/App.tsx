@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <div className="bg-custom-gray1 w-full h-full">
-        <nav className="bg-custom-gray1 opacity-90 w-full drop-shadow-lg fixed top-0">
+        <nav className="bg-custom-gray1 opacity-90 w-full drop-shadow-lg fixed top-0 z-50">
           <div className="w-full flex flex-wrap items-center justify-end p-4">
             <button
               type="button"
