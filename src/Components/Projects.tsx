@@ -18,6 +18,13 @@ const Projects: React.FC = () => {
     "Antd",
     "Tanstack Query",
   ];
+  const items3 = [
+    "TypeScript",
+    "NextJS",
+    "Tailwind CSS",
+    "Antd",
+    "Tanstack Query",
+  ];
 
   const item = {
     hidden: { opacity: 0 },
@@ -189,6 +196,52 @@ const Projects: React.FC = () => {
                 <img
                   alt="carRental"
                   src="./carRental.png"
+                  className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
+                />
+                <motion.div
+                  className="absolute top-0 left-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
+                  variants={picture}
+                ></motion.div>
+              </div>
+            </div>
+
+            <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
+              <motion.div
+                className="md:w-1/2 w-full md:order-1"
+                variants={item}
+              >
+                <div className="flex items-center gap-6">
+                  <div className="text-white font-bold text-xl hover:text-custom-blue1">
+                    H6 Homesix
+                  </div>
+                  <div className="text-white text-xl hover:text-custom-blue1 cursor-pointer hover:translate-x-1 duration-150">
+                    <a href="https://h6homesix.vercel.app/" target="_blank">
+                      <MdLogout />
+                    </a>
+                  </div>
+                </div>
+                <div className="text-white bg- w-full mt-4 p-6 bg-slate-600 rounded-md">
+                  <p className="break-words">
+                    TikTrack is a comprehensive HR management solution with
+                    mobile apps for employees and a web platform for
+                    administrators. Streamline HR tasks effortlessly, from
+                    attendance and leave management to organizing organizational
+                    details. Stay updated with notifications and efficiently
+                    manage employee data, making HR tasks a breeze
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {items3.map((r: string) => (
+                    <div className="rounded-2xl py-1 px-2 text-custom-blue2 bg-gray-700 text-sm">
+                      {r}
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+              <div className="md:w-1/2 w-full relative md:order-2">
+                <img
+                  alt="tiktrack website"
+                  src="./tikTrack.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />
                 <motion.div
