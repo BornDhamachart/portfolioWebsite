@@ -1,28 +1,24 @@
-# React + TypeScript + Vite
+# Dhamachart Chanprasartsuk Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio website! This website serves as a showcase of my projects, work experience, interests, and a way to get to know me better.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website is designed to provide visitors with a comprehensive view of my professional background, skills, and the projects I have worked on. Whether you're interested in exploring my portfolio or getting in touch with me for potential collaborations, you'll find all the information you need here.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Visit the [https://dhamachart-chanprasartsuk-portfolio.vercel.app/](#) and explore my portfolio.
+- If you're interested in collaborating, have questions, or just want to connect, feel free to contact me via email: [dhamachart.c@gmail.com](mailto:dhamachart.c@gmail.com).
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshots
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![Homepage Screenshot](public/portfolio.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# portfolioWebsite
+## Support/Contact
+
+If you have any questions or would like to get in touch with me, you can reach me via email: [dhamachart.c@gmail.com](mailto:dhamachart.c@gmail.com).
+
+---
+
+Thank you for visiting my portfolio website! I look forward to connecting with you and sharing my work with you.
