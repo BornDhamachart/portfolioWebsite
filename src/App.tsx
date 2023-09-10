@@ -110,13 +110,13 @@ function App() {
           </div>
         </nav>
 
-        <div className="md:pl-48 px-4 pt-36" ref={aboutMeRef}>
+        <div className="lg:pl-48 px-4 pt-36 sm:px-20" ref={aboutMeRef}>
           <AboutMe />
         </div>
-        <div className="md:left-0 px-4 mt-2 md:bottom-0 md:fixed">
+        <div className="lg:left-0 px-4 mt-2 lg:bottom-0 lg:fixed sm:px-20">
           <SideLink />
         </div>
-        <div className="md:pl-48 px-4 mt-16">
+        <div className="lg:pl-48 px-4 mt-16 sm:px-20">
           <TechStack />
           <div ref={projectsRef} className="md:mt-56 mt-6">
             <Projects />

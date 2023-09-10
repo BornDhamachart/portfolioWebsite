@@ -21,7 +21,7 @@ const SideLink: React.FC = () => {
 
   return (
     <motion.div
-      className="md:flex-col flex justify-evenly gap-4 text-custom-blue1 md:px-6"
+      className="lg:flex-col flex justify-evenly gap-4 text-custom-blue1 lg:px-6"
       initial="hidden"
       animate="show"
       variants={item}
@@ -47,7 +47,7 @@ const SideLink: React.FC = () => {
       >
         <MailOutlined />
       </a>
-      <div className="md:h-[150px] md:border md:border-custom-blue1 mx-auto"></div>
+      <div className="lg:h-[150px] lg:border lg:border-custom-blue1 mx-auto"></div>
     </motion.div>
   );
 };

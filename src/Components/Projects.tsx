@@ -115,7 +115,6 @@ const Projects: React.FC = () => {
               variants={rightToLeft}
             ></motion.div>
           </motion.div>
-
           <div className="flex-col flex justify-center items-center">
             <div className="flex items-center gap-6">
               <div className="text-white font-bold text-xl hover:text-custom-blue1">
@@ -127,9 +126,9 @@ const Projects: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
+            <div className="flex-col lg:flex-row flex lg:p-8 justify-center w-full xl:w-2/3 gap-6">
               <motion.div
-                className="md:w-1/2 w-full md:order-1"
+                className="lg:w-1/2 w-full lg:order-1"
                 variants={item}
               >
                 <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
@@ -147,14 +146,14 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2 flex justify-center">
+              <div className="lg:w-1/2 lg:order-2 flex justify-center relative">
                 <img
                   alt="h6homesix website"
                   src="./h6homesix.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />
                 <motion.div
-                  className="absolute top-0 left-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
+                  className="absolute top-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
                   variants={picture}
                 ></motion.div>
               </div>
@@ -170,9 +169,9 @@ const Projects: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-col md:flex-row flex md:p-8 justify-center  w-full xl:w-2/3 gap-6">
+            <div className="flex-col lg:flex-row flex lg:p-8 justify-center  w-full xl:w-2/3 gap-6">
               <motion.div
-                className="md:w-1/2 w-full md:order-2"
+                className="lg:w-1/2 w-full lg:order-2"
                 variants={item}
               >
                 <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
@@ -192,14 +191,14 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-1 flex justify-center">
+              <div className="lg:w-1/2 w-full relative lg:order-1 flex justify-center">
                 <img
                   alt="carRental"
                   src="./carRental.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />
                 <motion.div
-                  className="absolute top-0 left-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
+                  className="absolute top-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
                   variants={picture}
                 ></motion.div>
               </div>
@@ -210,9 +209,9 @@ const Projects: React.FC = () => {
                 TikTrack
               </div>
             </div>
-            <div className="flex-col md:flex-row flex md:p-8 justify-center w-full xl:w-2/3 gap-6">
+            <div className="flex-col lg:flex-row flex lg:p-8 justify-center w-full xl:w-2/3 gap-6">
               <motion.div
-                className="md:w-1/2 w-full md:order-1"
+                className="lg:w-1/2 w-full lg:order-1"
                 variants={item}
               >
                 <div className="text-white bg- w-full p-6 bg-slate-600 rounded-md mt-6">
@@ -221,8 +220,6 @@ const Projects: React.FC = () => {
                     mobile apps for employees and a web platform for
                     administrators. Streamline HR tasks effortlessly, from
                     attendance and leave management to organizing organizational
-                    details. Stay updated with notifications and efficiently
-                    manage employee data, making HR tasks a breeze
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -233,19 +230,20 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </motion.div>
-              <div className="md:w-1/2 w-full relative md:order-2 flex justify-center">
+              <div className="lg:w-1/2 lg:order-2 flex justify-center relative">
                 <img
                   alt="tiktrack website"
                   src="./tikTrack.png"
                   className="w-[420px] h-[250px] hover:scale-105 duration-200 rounded-md"
                 />
                 <motion.div
-                  className="absolute top-0 left-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
+                  className="absolute top-0 w-[420px] h-[250px] bg-custom-blue1 opacity-90 rounded-md"
                   variants={picture}
                 ></motion.div>
               </div>
             </div>
           </div>
+          ß
         </motion.div>
       </div>
     </>
