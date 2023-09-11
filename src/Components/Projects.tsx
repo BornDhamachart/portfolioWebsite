@@ -2,7 +2,9 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { MdLogout } from "react-icons/md";
 
+
 const Projects: React.FC = () => {
+
   const items1 = [
     "TypeScript",
     "React",
@@ -243,7 +245,6 @@ const Projects: React.FC = () => {
               </div>
             </div>
           </div>
-          ß
         </motion.div>
       </div>
     </>
